@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "3100:3100"
+
+    command: ["/app/main"]
+
